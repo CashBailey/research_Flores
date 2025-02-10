@@ -1,0 +1,17 @@
+# Ignore build and install directories
+/build/
+/install/
+/log/
+
+# Ignore any IDE-specific files
+.vscode/
+.idea/
+
+# Ignore Python cache files
+__pycache__/
+*.pyc
+
+# Ignore any binary files
+*.so
+*.dll
+*.exe
