@@ -35,7 +35,8 @@ public:
         lambdav_ = this->declare_parameter<double>("lambdav", 1.0);
         lambdaw_ = this->declare_parameter<double>("lambdaw", 1.0);
 
-        homography_pub_ = this->create_publisher<std_msgs::msg::Float64MultiArray>("/homograpy_numerical", 10);
+        // Corrected topic name for publishing homography matrix
+        homography_pub_ = this->create_publisher<std_msgs::msg::Float64MultiArray>("/homography_numerical", 10);
         ck_t_ct_pub_ = this->create_publisher<std_msgs::msg::Float64MultiArray>("/ck_t_ct", 10);
         n_pub_ = this->create_publisher<std_msgs::msg::Float64MultiArray>("/n_plane_vector", 10);
         Uv_pub_ = this->create_publisher<std_msgs::msg::Float64MultiArray>("/Uv", 10);
